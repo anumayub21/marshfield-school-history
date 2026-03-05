@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- This tells the browser this is an HTML5 document -->
+
+<html> <!-- This is the start of the whole webpage -->
+<head>
+    <title>Staff Database</title> <!-- This is the name that appears on the browser tab -->
+ <link rel="stylesheet" href="style.css"> <!-- This connects the page to the CSS file to control the design --></head>
+
+<body> <!-- Everything inside here will be shown on the webpage -->
+
+<!-- Header -->
+<div class="header"> <!-- This section is the top part of the page -->
+    <h1>Marshfield School History</h1> <!-- Main big heading -->
+</div>
+
+<!-- Navigation -->
+<div class="nav"> <!-- This section contains the menu links -->
+  <a href="index.html">About</a> <!-- Link to About page -->
+  <a href="page2.html">Chapel Green Board School</a> <!-- Link to page 2 -->
+  <a href="page3.html">Thornton Lane Board School</a> <!-- Link to page 3 -->
+  <a href="page4.html">Marshfield School</a> <!-- Link to page 4 -->
+  <a href="page5_staff.html">Staff Database</a> <!-- Link to this current page -->
+  <a href="page6_sources.html">Sources Database</a> <!-- Link to sources page -->
+</div>
+
+<!-- Main content -->
+<div class="container"> <!-- This holds the main content in the middle of the page -->
+    <h2>Staff Database Search</h2> <!-- Smaller heading for this section -->
+
+<form action="staff_search.php" method="GET"> <!-- When the user clicks Search, data is sent to staff_search.php using GET method -->
+
+
+  <div class="form-row"> <!-- This is one row of the form -->
+    <label>School Name</label> <!-- Text label telling the user what to choose -->
+<select name="SchoolName"> <!-- Dropdown list. The selected value will be called SchoolName -->
+    <option value="">-- Any --</option> <!-- Default option (means no filter) -->
+    <option value="Marshfield School">Marshfield School</option> <!-- Option 1 -->
+    <option value="Thornton Lane Board School">Thornton Lane Board School</option> <!-- Option 2 -->
+    <option value="Chapel Green Board School">Chapel Green Board School</option> <!-- Option 3 -->
+</select>
+
+  </div>
+
+  <div class="form-row"> <!-- Another row in the form -->
+    <label>Department</label> <!-- Label text -->
+    <select name="Dept"> <!-- Dropdown. The selected value will be called Dept -->
+      <option value="">-- Any --</option> <!-- Default option -->
+      <option value="Junior">Junior</option> <!-- Option -->
+      <option value="Infant">Infant</option> <!-- Option -->
+      <option value="Admin">Admin</option> <!-- Option -->
+    </select>
+  </div>
+
+  <div class="form-row"> <!-- Another row -->
+    <label>Last Name</label> <!-- Label -->
+    <input type="text" name="LastName"> <!-- Text box where user types a last name -->
+  </div>
+
+  <div class="form-row"> <!-- Another row -->
+    <label>Position</label> <!-- Label -->
+    <select name="Position"> <!-- Dropdown. The selected value will be called Position -->
+    <option value="">-- Any --</option> <!-- Default option -->
+    <option value="Head Mistress">Head Mistress</option> <!-- Option -->
+    <option value="Assistant Mistress">Assistant Mistress</option> <!-- Option -->
+    <option value="Monitor">Monitor</option> <!-- Option -->
+    <option value="Candidate">Candidate</option> <!-- Option -->
+</select>
+
+  </div>
+
+  <div class="form-row"> <!-- Another row -->
+    <label>Start Year</label> <!-- Label -->
+    <input type="text" name="StartYear"> <!-- Text box where user types a year -->
+  </div>
+
+  <div class="form-row"> <!-- Last row -->
+    <button type="submit">Search</button> <!-- This button sends the form data to staff_search.php -->
+  </div>
+
+</form>
+
+</div>
+
+<!-- Footer -->
+<div class="footer"> <!-- Bottom section of the page -->
+    Community History Research by Ray Greenhough <!-- Text shown at the bottom -->
+</div>
+
+</body> <!-- End of visible webpage content -->
+
+</html> <!-- End of the HTML document -->

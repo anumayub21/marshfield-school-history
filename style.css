@@ -1,0 +1,209 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f6;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(to right, hsl(164, 53%, 19%), hsl(164, 53%, 19%));
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Navigation bar */
+.nav {
+    background-color: hsl(164, 53%, 19%);
+    text-align: center;
+    padding: 12px;
+}
+
+.nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main container */
+.container {
+    background: white;
+    width: 70%;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+    background-color: hsl(164, 75%, 17%);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+form label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+form input, form select {
+    margin-right: 20px;
+    padding: 5px;
+}
+
+form button {
+    padding: 6px 12px;
+    background-color: #5c8d7a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #4a7564;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid hsl(164, 53%, 19%);
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: hsl(164, 53%, 19%);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #dcdcdc;
+}
+.nav a:hover {
+  background-color: rgba(255,255,255,0.15);
+  padding: 6px 12px;
+  border-radius: 3px;
+}
+
+.footer {
+    margin-top: 60px;
+}
+.container {
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.nav a.active {
+  background-color: hsl(164, 53%, 19%);
+  padding: 6px 12px;
+  border-radius: 3px;
+  text-decoration: underline;
+}
+td {
+  vertical-align: top;
+}
+/* =====================================================
+   COMPATIBILITY: Make old About/Page1 IDs use Page5/6 style
+   ===================================================== */
+
+/* Header */
+#header {
+  background: linear-gradient(to right, hsl(164, 53%, 19%), hsl(164, 53%, 19%));
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+/* Navigation */
+#nav-buttons {
+  background-color: hsl(164, 53%, 19%);
+  text-align: center;
+  padding: 12px;
+}
+
+#nav-buttons a {
+  color: white;
+  margin: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+#nav-buttons a:hover {
+  background-color: rgba(255,255,255,0.15);
+}
+
+#nav-buttons a.active {
+  text-decoration: underline;
+  background-color: rgba(255,255,255,0.15);
+}
+
+/* Main content wrapper -> make it look like .container */
+#content-wrapper,
+#page2-wrapper,
+main {
+  background: white;
+  width: 70%;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Keep your About page two-column layout but inside the new container */
+#content-wrapper {
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+/* Left + right columns */
+#about-section {
+  width: 70%;
+  font-size: 18px;
+}
+
+#dates-section {
+  width: 30%;
+  background-color: #f4f6f6;
+  padding: 15px;
+  border-left: 4px solid hsl(164, 53%, 19%);
+  border-radius: 4px;
+}
+
+/* Tables on Page 1a: match your site */
+.page-table td {
+  border: 1px solid hsl(164, 53%, 19%);
+}
+.page-table td:hover {
+  background-color: hsl(164, 53%, 19%);
+}
+.page-table td:hover a {
+  color: white;
+}
+
+/* Footer */
+#footer {
+  background-color: hsl(164, 75%, 17%);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 60px;
+}
